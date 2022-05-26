@@ -13,10 +13,10 @@
 		<div class="header__body">
 			<img src="./images/header__logo.svg" alt="PAPA WATCON" class="header__logo">
 			<div class="header__links-contain">
-				<a href="#" class="header__link">О нас</a>
-				<a href="#" class="header__link">Где мы</a>
-				<a href="#" class="header__link">Кейтеринг</a>
-				<a href="#" class="header__link">Контакты</a>
+				<a href="#vatson" class="header__link">Ватсон</a>
+				<a href="#where" class="header__link">Где мы</a>
+				<a href="#catering" class="header__link">Кейтеринг</a>
+				<a id="contacts" href="#" class="header__link">Контакты</a>
 			</div>
 		</div>
 	</header>
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="where">
+		<section id="where" class="where">
 			<div class="where__body">
 				<div class="where__contain">
 					<h2 class="where__title">Где нас найти</h2>
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="blog">
+		<section id="vatson" class="blog">
 			<div class="blog__body">
 				<div class="blog__contain">
 					<h2 class="blog__title">Где Ватсон?</h2>
@@ -169,16 +169,23 @@
 				</div>
 			</div>
 		</section>
-		<section class="catering">
+		<section id="catering" class="catering">
 			<div class="catering__body">
 				<div class="catering__contain">
 					<h2 class="catering__title">Кейтеринг</h2>
 					<div class="catering__content">
-						<div class="slider">
-							<img src="./images/keytering__img.jpg" alt="" class="slider__img">
+						<div id="block-for-slider" class="slider">
+							<div id="viewport" class="slider__vieport">
+								<ul id="slidewrapper" class="slider-track">
+									<li class="slide"><img src="./images/keytering__img.jpg" alt="" class="slide__img"></li>
+									<li class="slide"><img src="./images/keytering__img.jpg" alt="" class="slide__img"></li>
+									<li class="slide"><img src="./images/keytering__img.jpg" alt="" class="slide__img"></li>
+									<li class="slide"><img src="./images/keytering__img.jpg" alt="" class="slide__img"></li>
+								</ul>
+							</div>
 							<div class="slider__arrows">
-								<div class="d16"></div>
-								<div class="d15"></div>
+								<div id="prev-btn" class="d16"></div>
+								<div id="next-btn" class="d15"></div>
 							</div>
 						</div>
 						<div class="catering__text-track">
@@ -193,6 +200,7 @@
 			</div>
 		</section>
 	</main>
+	<script src="./jquery-3.6.0.min.js"></script>
 	<script src="./script.js"></script>
 </body>
 </html>
