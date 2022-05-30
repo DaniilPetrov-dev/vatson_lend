@@ -82,6 +82,14 @@ html {
 }
 
 /* Конец header */
+/* Начало menu-mobile */
+
+.menu-mobile {
+	opacity: 0;
+	left: -100%;
+}
+
+/* Конец menu-mobile */
 /* Начало intro */
 
 .intro {
@@ -438,6 +446,7 @@ html {
 .catering {
 	width: 100%;
 	min-height: 925px;
+	background-image: url("./images/where__background.jpg");
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -620,6 +629,165 @@ html {
 }
 
 /* Конец slider */
+/* Начало form-block */
+
+.form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.form-block {	
+	width: 100%;
+	min-height: 930px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.form__body {
+	max-width: 1270px;
+	width: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.form__contain {
+	max-width: 1010px;
+	width: 100%;
+	min-height: 615px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.form__title {
+	font-weight: 700;
+	font-size: 2.8rem;
+	line-height: 53px;
+	margin-bottom: 20px;
+}
+
+.form__text {
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 29px;
+	max-width: 620px;
+}
+
+.form__input-content {
+	width: 100%;
+	max-height: 295px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.form__input-line {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.form__input-line input {
+	margin-bottom: 0;
+}
+
+.form__input {
+	background-color: #FAFAFA;
+	color: #1F252B;
+	max-width: 490px;
+	width: 100%;
+	padding: 30px 20px;
+	min-height: 85px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: none;
+	border-radius: 10px;
+	margin: 0 30px 20px 0;
+}
+
+.form__message {
+	min-height: 295px;
+	margin: 0 !important;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 23px;
+}
+
+.form__button {
+	background-color: #EF7730;
+	border: none;
+	color: #FAFAFA;
+	border-radius: 20px;
+	-webkit-box-shadow: 4px 4px 0 0 rgb(0, 0, 0);
+	        box-shadow: 4px 4px 0 0 rgb(0, 0, 0);
+	max-width: 360px;
+	width: 100%;
+	padding: 20px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 29px;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	margin-top: 30px;
+}
+
+input::-webkit-input-placeholder {
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 23px;
+}
+input:-moz-placeholder {
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 23px;
+}
+
+/* Конец form-block */
+/* Начало map*/
+
+.map {
+	width: 100%;
+	min-height: 925px;
+	background-image: url("./images/where__background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* Конец map */
 
 @media (max-width: 416px) {
 	.body {
@@ -917,5 +1085,94 @@ html {
 		max-height: 365px;
 		height: 365px;
 		justify-content: space-between;
+	}
+
+	.menu-mobile {
+		position: fixed;
+		z-index: 9;
+		background-color: #098BAB;
+		color: #FAFAFA;
+	}
+
+	.active {
+		opacity: 1;
+		left: 0;
+	}
+
+	.form-block {	
+		min-height: 900px;
+	}
+
+	.form__body {
+		max-width: 335px;
+	}
+
+	.form__contain {
+		max-width: 335px;
+		min-height: 622px;
+	}
+
+	.form__title {
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 41px;
+		margin-bottom: 5px;
+	}
+
+	.form__text {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 19px;
+		max-width: 335px;
+	}
+
+	.form__input-content {
+		max-height: 360px;
+	}
+
+	.form__input-line input {
+		margin-bottom: 20px;
+	}
+
+	.form__input {
+		max-width: 335px;
+		padding: 18px 15px;
+		min-height: 55px;
+		border-radius: 10px;
+		margin: 0 25px 20px 0;
+	}
+
+	.form__message {
+		height: 113px;
+		margin: 0 !important;
+		font-weight: 300;
+		font-size: 1.25rem;
+		line-height: 23px;
+	}
+
+	.form__button {
+		border-radius: 10px;
+		max-width: 335px;
+		padding: 15px;
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 23px;
+		margin-top: 20px;
+	}
+
+	input::-webkit-input-placeholder {
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 19px;
+	}
+	input:-moz-placeholder {
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 19px;
+	}
+
+	.map {
+		background-image: url("./images/where__background_mobil.jpg");
+		min-height: 760px;
 	}
 }

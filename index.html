@@ -24,6 +24,19 @@
 		</div>
 	</header>
 	<main class="main">
+		<section class="menu-mobile">
+			<div class="menu-mobile__body">
+				<div class="menu-mobile__content">
+					<h2 class="menu-mobile__title">Меню:</h2>
+					<p class="menu-mobile__link">Где нас найти</p>
+					<p class="menu-mobile__link">Где Ватсон</p>
+					<p class="menu-mobile__link">Меню</p>
+					<p class="menu-mobile__link">Прикольчик</p>
+					<p class="menu-mobile__link">Кейтеринг</p>
+					<p class="menu-mobile__link">Контакты</p>
+				</div>
+			</div>
+		</section>
 		<section class="intro">
 			<div class="intro__body">
 				<div class="intro__contain">
@@ -208,8 +221,36 @@
 				</div>
 			</div>
 		</section>
+		<section class="form-block">
+			<div class="form__body">
+				<div class="form__contain">
+					<div class="form__content">
+						<h2 class="form__title">Закажи кейтеринг</h2>
+						<p class="form__text">-братишка, можешь отойти?) Я экрана не вижу☺📺
+							-ахах😅 а че ты делаешь?
+							-да пытаюсь в Майнкрафте угля найти для миссии с вертолетиком из ГТА Сан-Кальянос☝🏼🤓🎮м</p>
+					</div>
+					<form id="form" class="form">
+						<div class="form__input-content">
+							<input type="text" name="name" class="form__input" placeholder="Имя" required />
+							<input type="text" name="phone" class="form__input" placeholder="Номер" required />
+							<div class="form__input-line">
+								<input type="date" name="date" placeholder="Дата" class="form__input" required />
+								<input type="number" name="quantity" placeholder="Количество человек" class="form__input" required />
+							</div>
+	                    	<textarea name="message" placeholder="Ваши пожелания" class="form__input form__message"></textarea>
+						</div>
+						<input class="form__button" type="submit" value="Заказать" />
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="map">
+			
+		</section>
 	</main>
 	<script src="./jquery-3.6.0.min.js"></script>
-	<script src="./script.js"></script>
+	<script src="./slider.js"></script>
+	<script src="./menuMobile.js"></script>
 </body>
 </html>
