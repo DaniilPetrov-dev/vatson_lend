@@ -773,9 +773,9 @@ input:-moz-placeholder {
 }
 
 /* Конец form-block */
-/* Начало map*/
+/* Начало contacts*/
 
-.map {
+.contacts {
 	width: 100%;
 	min-height: 925px;
 	background-image: url("./images/where__background.jpg");
@@ -787,7 +787,73 @@ input:-moz-placeholder {
 	display: flex;
 }
 
-/* Конец map */
+.contacts__body {
+	max-width: 1270px;
+	width: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.contacts__contain {
+	max-height: 625px;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.map {
+	width: 620px;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 0 0 rgb(0, 0, 0);
+	        box-shadow: 4px 4px 0 0 rgb(0, 0, 0);
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+.contacts__link-contain {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.contacts__contant {
+	color: #1F252B;
+}
+
+.contacts__link {
+	color: #1F252B;
+	text-decoration: underline;
+}
+
+.contacts__link-logo {
+	max-width: 35px;
+	margin-right: 10px;
+}
+
+.contacts__title {
+	font-weight: 700;
+	font-size: 2.8rem;
+	line-height: 53px;
+}
+
+/* Конец contacts */
 
 @media (max-width: 416px) {
 	.body {
@@ -1171,8 +1237,33 @@ input:-moz-placeholder {
 		line-height: 19px;
 	}
 
-	.map {
+	.contacts {
 		background-image: url("./images/where__background_mobil.jpg");
 		min-height: 760px;
+	}
+	
+	.contacts__body {
+		max-width: 335px;
+	}
+	
+	.contacts__contain {
+		max-height: 550px;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+	}
+	
+	.map {
+		max-width: 335px;
+		margin-right: 0px;
+	}
+	
+	.contacts__contant {
+		margin-bottom: 35px;
+	}
+	
+	.contacts__title {
+		font-weight: 700;
+		font-size: 2.2rem;
+		line-height: 41px;
 	}
 }
