@@ -39,11 +39,6 @@ function nextSlide() {
     }
 }
 
-function contactsAlert() {
-	alert('А котнтакты спиздили');
-}
-
-
 $(document).ready(function () {
     var switchInterval = setInterval(nextSlide, slideInterval);
 
@@ -59,10 +54,6 @@ $(document).ready(function () {
 
     $('#prev-btn').click(function() {
         prevSlide();
-	});
-
-	$('#contacts').click(function() {
-		contactsAlert();
 	});
 
     $('.slide-nav-btn').click(function() {
