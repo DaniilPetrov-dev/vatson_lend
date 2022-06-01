@@ -1,4 +1,4 @@
-@import url("./fonts/fonts.css");
+@import url("../fonts/fonts.css");
 
 html {
 	overflow-x: hidden;
@@ -87,6 +87,7 @@ html {
 }
 
 /* Конец header */
+
 /* Начало menu-mobile */
 
 .menu-mobile {
@@ -95,10 +96,11 @@ html {
 }
 
 /* Конец menu-mobile */
+
 /* Начало intro */
 
 .intro {
-	background-image: url("./images/intro__background.svg");
+	background-image: url("../images/intro__background.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -158,7 +160,7 @@ html {
 .where {
 	width: 100%;
 	min-height: 925px;
-	background-image: url("./images/where__background.jpg");
+	background-image: url("../images/where__background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -343,7 +345,7 @@ html {
 .menu {
 	width: 100%;
 	min-height: 925px;
-	background-image: url("./images/where__background.jpg");
+	background-image: url("../images/where__background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -452,7 +454,7 @@ html {
 .catering {
 	width: 100%;
 	min-height: 925px;
-	background-image: url("./images/where__background.jpg");
+	background-image: url("../images/where__background.jpg");
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -800,7 +802,7 @@ input:-moz-placeholder {
 .contacts {
 	width: 100%;
 	min-height: 925px;
-	background-image: url("./images/where__background.jpg");
+	background-image: url("../images/where__background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1055,7 +1057,7 @@ input:-moz-placeholder {
 	}
 
 	.intro {
-		background-image: url("./images/intro__background_mobil.svg");
+		background-image: url("../images/intro__background_mobil.svg");
 		margin-top: 0;
 		max-width: 416px;
 		min-height: 650px;
@@ -1090,7 +1092,7 @@ input:-moz-placeholder {
 	}
 
 	.where {
-		background-image: url("./images/where__background_mobil.jpg");
+		background-image: url("../images/where__background_mobil.jpg");
 		min-height: 760px;
 	}
 
@@ -1182,7 +1184,7 @@ input:-moz-placeholder {
 
 	.menu {
 		min-height: 650px;
-		background-image: url("./images/where__background_mobil.jpg");
+		background-image: url("../images/where__background_mobil.jpg");
 	}
 
 	.menu__body {
@@ -1221,7 +1223,7 @@ input:-moz-placeholder {
 
 	.catering {
 		min-height: 650px;
-		background-image: url("./images/where__background_mobil.jpg");
+		background-image: url("../images/where__background_mobil.jpg");
 	}
 
 	.catering__body {
@@ -1326,6 +1328,8 @@ input:-moz-placeholder {
 
 	.menu-mobile__content {
 		min-height: 310px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.menu-mobile__title {
@@ -1340,6 +1344,8 @@ input:-moz-placeholder {
 		font-size: 1.25rem;
 		line-height: 23px;
 		margin-bottom: 15px;
+		color:#FAFAFA;
+		text-decoration: none;
 	}
 
 	.active {
@@ -1420,7 +1426,7 @@ input:-moz-placeholder {
 	}
 
 	.contacts {
-		background-image: url("./images/where__background_mobil.jpg");
+		background-image: url("../images/where__background_mobil.jpg");
 		min-height: 760px;
 	}
 	
